@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>My Library</h1>
+    <button class="book-button" type="button">+New Book</button>
+    <dialog id="book-form-container">
+      <button id="close-button">
+        <img src="./images/close.svg" alt="close-icon">
+      </button>
+      <form class="book-form">
+        <p class="new-book-title">New Book</p>
+        <div class="field title">
+          <label for="title">Title:</label>
+          <input id="title" type="text" placeholder="Book name" autofocus required/>
+        </div>
+        <div class="field author">
+          <label for="author">Author:</label>
+          <input id="author" type="text" placeholder="Author name" required />
+        </div>
+        <div class="field pages">
+          <label for="pages">Pages:</label>
+          <input id="pages" type="number" placeholder="Number of pages book has"required />
+        </div>
+        <fieldset>
+          <legend>Read the book?</legend>
+          <div>
+            <input type="radio" id="yes" name="read-book" value="yes" required>
+            <label for="yes">yes</label>
+          </div>
+
+          <div>
+            <input type="radio" id="no" name="read-book" value="no" required>
+            <label for="no">no</label>
+          </div>
+        </fieldset>
+        <div class="user-input-buttons">
+          <button type="submit" id="submit-button">
+            <img src="./images/submit.svg" alt="submit-icon">
+          </button>
+          <button id="close-button">
+            <img src="./images/close.svg" alt="close-icon">
+          </button>
+        </div>
+      </form>
+    </dialog>
+    <div class="book-container">
+      <!-- <div class="card">
+        <p>Test</p>
+        <p>Author: Test</p>
+        <p>Author: Test</p>
+        <p>Author: Test</p>
+        <p>Author: Test</p>
+        <button>Remove</button> -->
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
